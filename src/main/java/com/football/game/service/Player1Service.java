@@ -30,6 +30,9 @@ public class Player1Service {
         int x = (int) ((Math.random() * (max - min)) + min);
         List<IGplayers> assignedteam = (List<IGplayers>) igPlayerRepo.findByJerseyno(x);
         newplayer1.setTeam((ArrayList<IGplayers>) assignedteam);
+        IGplayers mockplayer = assignedteam.get(4);
+        String team_name = mockplayer.getTeam_name();
+        newplayer1.setTeam_assigned(team_name);
         return player1Repo.save(newplayer1);
 
     }

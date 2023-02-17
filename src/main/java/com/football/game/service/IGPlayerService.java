@@ -35,8 +35,4 @@ public class IGPlayerService {
         return igPlayerRepo.findByJerseyno(jerseyno);
     }
 
-
-
-
-
 }

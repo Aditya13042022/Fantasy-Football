@@ -10,4 +10,5 @@ import java.util.List;
 public interface IGPlayerRepo extends MongoRepository<IGplayers, String> {
 
     List<IGplayers> findByJerseyno(int jerseyno);
+
 }

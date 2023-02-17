@@ -22,6 +22,8 @@ public class Player1 {
 
     private Double score;
 
+    private String team_assigned;
+
     ArrayList<IGplayers> team;
 
 

@@ -34,7 +34,8 @@ public class IGPlayerController {
     }
 
     @GetMapping("/jerseyno/{jerseyno}")
-    public List<IGplayers> findPlayersByJerseyNo(@PathVariable int jerseyno){
+    public List<IGplayers> findByJerseyNo(@PathVariable int jerseyno){
         return igservice.getPlayersByJersey(jerseyno);
     }
+
 }
