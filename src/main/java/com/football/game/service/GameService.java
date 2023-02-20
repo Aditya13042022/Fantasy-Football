@@ -44,7 +44,7 @@ public class GameService {
         game.setScore((double) 0);
         game.setGoals_scored_by_teamA(0);
         game.setGoals_scored_by_teamB(0);
-        System.out.println("Player 1 : " + playerA.getUser_name() + " Playing with  " + "Player 2 : " + playerB.getUser_name() + "\n");
+        System.out.println(playerA.getUser_name() + "   playing with   " +playerB.getUser_name() + "\n");
         System.out.println(playerA.getTeam_assigned() + " VS "+ playerB.getTeam_assigned() + "\n");
         System.out.println("The game consists of 90 minutes in total with one half of 45 minutes each.\n");
         System.out.println("SCORECARD : \n");

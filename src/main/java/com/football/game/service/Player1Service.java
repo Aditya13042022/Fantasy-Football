@@ -27,7 +27,15 @@ public class Player1Service {
 
     public Player1 CreateNewPlayer( @NotNull Player1 newplayer1,@NotNull int min, @NotNull int max){
         newplayer1.setScore((double) 0);
-        int x = (int) ((Math.random() * (max - min)) + min);
+        /*int x = (int) ((Math.random() * (max - min)) + min);*/
+        System.out.println("Welcome Player, Firstly choose the team from the following list : \n");
+        System.out.println(" 1:Barcelona \n 2:Real Madrid \n 3:PSG \n 4:Manchester-United \n 5:Manchester-City \n 6:Chelsea \n 7:Bayern Munich \n 8:Atletico Madrid \n 9:Juventus \n 10:Liverpool \n 11:Arsenal \n");
+        Scanner myObj = new Scanner(System.in);
+        int x = myObj.nextInt();
+        System.out.println("Please enter your user name : \n");
+        Scanner myobj = new Scanner(System.in);
+        String user_name = myobj.nextLine();
+        newplayer1.setUser_name(user_name);
         List<IGplayers> assignedteam = (List<IGplayers>) igPlayerRepo.findByJerseyno(x);
         newplayer1.setTeam((ArrayList<IGplayers>) assignedteam);
         IGplayers mockplayer = assignedteam.get(4);
