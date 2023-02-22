@@ -1,7 +1,7 @@
 package com.football.game.service;
 
 import com.football.game.model.IGplayers;
-import com.football.game.model.Player1;
+import com.football.game.model.Player;
 import com.football.game.repository.IGPlayerRepo;
 import com.football.game.repository.Player1Repo;
 import org.jetbrains.annotations.NotNull;
@@ -25,9 +25,7 @@ public class Player1Service {
         this.igPlayerRepo = igPlayerRepo;
     }
 
-    public Player1 CreateNewPlayer( @NotNull Player1 newplayer1,@NotNull int min, @NotNull int max){
-        newplayer1.setScore((double) 0);
-        /*int x = (int) ((Math.random() * (max - min)) + min);*/
+    public Player CreateNewPlayer(@NotNull Player newplayer1){
         System.out.println("Welcome Player, Firstly choose the team from the following list : \n");
         System.out.println(" 1:Barcelona \n 2:Real Madrid \n 3:PSG \n 4:Manchester-United \n 5:Manchester-City \n 6:Chelsea \n 7:Bayern Munich \n 8:Atletico Madrid \n 9:Juventus \n 10:Liverpool \n 11:Arsenal \n");
         Scanner myObj = new Scanner(System.in);

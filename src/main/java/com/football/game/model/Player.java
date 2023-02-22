@@ -10,7 +10,7 @@ import java.util.ArrayList;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Player1 {
+public class Player {
 
 
     @Id
@@ -19,8 +19,6 @@ public class Player1 {
     private String password;
 
     private String email;
-
-    private Double score;
 
     private String team_assigned;
 

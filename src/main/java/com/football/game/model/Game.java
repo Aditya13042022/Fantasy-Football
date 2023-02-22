@@ -13,15 +13,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 public class Game {
     @Id
-    private String creation_date_and_time;
+    private long creation_date_and_time;
 
     private Integer  gameid;
 
-    private Double score;
+    private String FirstTeam_name;
 
-    private int goals_scored_by_teamA;
+    private String SecondTeam_name;
 
-    private int goals_scored_by_teamB;
+    private int goals_scored_by_FirstTeam;
+
+    private int goals_scored_by_SecondTeam;
 
 
 }
